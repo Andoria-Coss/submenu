@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#af44e0 ;
+    color: #230b29;
+    padding: 15px;
+}
+.header h1{
+  text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #b85fc4;
+    color: #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #b58dc7;
+}
+.aside {
+    background-color: #b85fc4;
+    padding: 15px;
+    color: #070008;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #af44e0;
+    color: #210125;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+body{
+  background-color: #ffffffc4;
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: rgb(204, 173, 230);
+    }
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Formación Académica</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <a href="index.html"><li>Inicio</li></a> 
+    <a href="Datosp.html"><li>Datos Personales</li></a> 
+   <a href="Formaciona.html"><li>Formación Académica</li></a> 
+   <a href="Experiencia.html"><li>Experiencia Laboral</li></a> 
+   <a href="Cursos.html"><li>Cursos</li></a> 
+  </ul>
+</div>
+
+<div class="col-6">
+  <h2>Técnica Físico Matemática</h2>
+  <h2>Programadora</h2>
+  <p>Estudiante Del Tecnológico Nacional De México Campus Orizaba</p>
+  <p>Egresada Del Centro De Estudios Tecnológicos Industrial Y De Servicios No. 146</p>
+  <p> Educación primaria: Miguel Hidalgo Y Costilla | 9.8 </p>
+  <p> Educación secundaria: Heriberto Jara Corona | 9.8  </p>
+  <p> Educación media superior: Centro De Estudios Tecnológicos Industriales y De Servicios 146 | 9.4 </p>
+  <p> Educación superior: Tecnológico Nacional De México Campus Orizaba | 92.71</p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <h2>Educación Media Superior</h2>
+    <p>CETIS 146</p>
+    <p>Área De Físico Matemáticas | Especialización En Programación</p>
+    <h2>Educación Superior </h2>
+    <p>TECNM CAMPUS ORIZABA</p>
+    <p>Ingeniería En Sistemas Computacionales | Desarrollo Web</p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>

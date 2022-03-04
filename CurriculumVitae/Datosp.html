@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#4781ff ;
+    color: #000080;
+    padding: 15px;
+}
+.header h1{
+  text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #b3bff5;
+    color: #000080;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #b8b3f5;
+    padding: 15px;
+    color: #000080;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #3b81dd;
+    color: #000080;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+body{
+  background-color: #ffffffc4;
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: rgb(190, 223, 235);
+    }
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 20%;}
+.col-4 {width: 30%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Datos Personales</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <a href="index.html"><li>Inicio</li></a> 
+    <a href="Datosp.html"><li>Datos Personales</li></a> 
+   <a href="Formaciona.html"><li>Formación Académica</li></a> 
+   <a href="Experiencia.html"><li>Experiencia Laboral</li></a> 
+   <a href="Cursos.html"><li>Cursos</li></a> 
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1>Formación Personal</h1>
+  <h2>Valores</h2>
+  <p>Soy una persona que valora mucho el respeto y la realización personal, los valores son una parte 
+  importante de mi vida, me rijo por estos mismos, ya que son parte de mi formación; soy una persona 
+  íntegra y aspiro a ser un miebro ejemplar que genere un impacto positivo para la sociedad, me considero 
+  humanitaria, altruista, recíproca y con grandes aspiraciones, así como virtudes</p>
+  <h2>Ética</h2>
+  <p>Es de gran importancia para mi, ejercer y vivir de acuerdo a las conductas consideradas correctas,
+    tanto en lo profesional, académico, como personal</p>
+  <h2>Moral</h2>
+  <p>Soy una persona de gran moral, con excelente compostura y modales, una persona de buenas costumbres</p>
+</div>
+
+<div class="col-4 right">
+  <div class="aside">
+    <h2>Nombre</h2>
+    <p>Andrea Beelegui Coss Espinosa</p>
+    <h2>Fecha De Nacimiento</h2>
+    <p>25/01/2001</p>
+    <h2>Lugar De Nacimiento</h2>
+    <p>Ucareo, Zinapécuaro Michoacán</p>
+    <h2>Lugar De Recidencia Actual</h2>
+    <p>Nogales, Veracruz</p>
+    <h2>Idiomas</h2>
+    <p>Español | Inglés (medio)</p>
+    <h2>Sexo</h2>
+    <p>Femenino</p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
